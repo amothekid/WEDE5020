@@ -1,5 +1,5 @@
 # WEDE5020
-## amo guid to good underwear
+## amo`s guide to good underwear
 ## Student Information
 ST10512128 Amogelang Meisie Mahlatji
 ## project overview
@@ -13,6 +13,7 @@ there sizing  for people to get fitted and measured .
 ##timeline and milestone 
 from beginning of 2026 until August of 2026 , the biggest milestone is that we work with quid a working underwear store .
 ## reference list
+Del Monte, C. (2020). 4 Ethical underwear brands made in South Africa. [online] twyg. Available at: https://twyg.co.za/4-ethical-underwear-brands-made-in-south-africa/ [Accessed 11 Sept. 2026].
 ThePowerMBA Global (2024). How to make a phenomenal contact page (+ examples). [online] Thepower.education. Available at: https://thepower.education/en/blog/how-to-make-a-phenomenal-contact-page-examples [Accessed 13 Aug. 2026].
 TheUndiesProject. (2021). Partners - Corporate and Community | TheUndiesProject. [online] Available at: https://www.theundiesproject.org/partners [Accessed 14 Aug. 2026].
 Underwear. (2015). [online] Smalls for All |. Available at: https://www.smallsforall.org/underwear/ [Accessed 14 Aug. 2026].
