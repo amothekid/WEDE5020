@@ -8,6 +8,16 @@ anywhere in the world .
 ##website objectives and goal 
 the websites goals is for everyone that needs a good ,well made , stylish underwear for any opportunity . The goal is that everyone should own a pair of quid 
 underwear.
+## payments
+our underwear from bras , panties , shoes have a range of R23 - R35
+## bras 
+R15 - 10
+## panties 
+R10-12
+## boxers 
+R10-R12
+## socks
+men and womens have the same price of R7-R8
 ## key features and functionality
 there sizing  for people to get fitted and measured .
 ##timeline and milestone 
