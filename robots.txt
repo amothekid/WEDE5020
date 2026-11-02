@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://glittering-alpaca-f931f2.netlify.app/sitemap.xml
+Sitemap: https://serene-llama-fb695f.netlify.app/sitemap.xml
