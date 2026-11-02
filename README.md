@@ -24,7 +24,15 @@ from beginning of 2026 until August of 2026 , the biggest milestone is that we w
 Del Monte, C. (2020). 4 Ethical underwear brands made in South Africa. [online] twyg. Available at: https://twyg.co.za/4-ethical-underwear-brands-made-in-south-africa/ [Accessed 11 Sept. 2026].
 ThePowerMBA Global (2024). How to make a phenomenal contact page (+ examples). [online] Thepower.education. Available at: https://thepower.education/en/blog/how-to-make-a-phenomenal-contact-page-examples [Accessed 13 Aug. 2026].
 [1] amogelangmeisie, “Mature Elegance,” Pinterest. [Online]. Available: https://za.pinterest.com/amogelangmeisie/mature-elegance/. [Accessed: Oct. 28, 2026].
-TheUndiesProject. (2021). Partners - Corporate and Community | TheUndiesProject. [online] Available at: https://www.theundiesproject.org/partners [Accessed 14 Aug. 2026].
+TheUndiesProject. (2021). Partners - Corporate and Community | TheUndiesProject. [online] Available at: https://www.theundiesproject.org/partners [Accessed 14 Aug. 2026]
+
+## screenchots
+.<img width="2048" height="2782" alt="127 0 0 1_5500_about html (2)" src="https://github.com/user-attachments/assets/80918d4f-6ad7-4d98-851f-1fa2d53f9cf4" />
+<img width="1536" height="3084" alt="127 0 0 1_5500_about html (1)" src="https://github.com/user-attachments/assets/9785673e-5570-4501-8a26-4e8c7f24c967" />
+<img width="640" height="4654" alt="127 0 0 1_5500_about html" src="https://github.com/user-attachments/assets/4e3781b7-d815-428c-af88-2f16e2bd02bd" />
+
+
+
 Underwear. (2015). [online] Smalls for All |. Available at: https://www.smallsforall.org/underwear/ [Accessed 14 Aug. 2026].
 Bio Sculpture. (2024). Foundation - Bio Sculpture. [online] Available at: https://biosculpture.com/foundation/?srsltid=AfmBOorU_yk4r7lNCAFL9A3ZzX_U0r4lIZ8Noz1nWju7nc30kLZzW_yT [Accessed 14 Aug. 2026].
 The Healthy Nails Collaborative. (2020). [online] HNC. Available at: https://www.healthynailscollaborative.com/ [Accessed 14 Aug. 2026].
