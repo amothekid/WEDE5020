@@ -19,7 +19,42 @@ men and womens have the same price of R7-R8
 ## key features and functionality
 there sizing  for people to get fitted and measured .
 ##timeline and milestone 
-from beginning of 2026 until August of 2026 , the biggest milestone is that we work with quid a working underwear store .
+from beginning of 2026 until August of 2026 , the biggest milestone is that we work with quid a working underwear store .## 🗺️ Website Sitemap
+## sitemape
+Below is the structure and layout of the website pages included in this repository:
+
+*   **[🏠 Home / Index](./index.html)** - The main landing page featuring our services and primary introduction.
+*   **[ℹ️ About Us](./about.html)** - Information about our company, vision, and team background.
+*   **[🛠️ Services](./services.html)** - Detailed breakdowns of what we offer to our clients.
+*   **[📞 Contact Us](./contact.html)** - Our contact form (powered by Netlify), location details, and social links.
+
+## ⏳ Development Timeline
+
+A breakdown of the project milestones and completion dates for this repository:
+
+*   **📅 Phase 1: Core Setup** *(28–29 October 2026)*
+    *   [x] Set up local project directory and configured Git in VS Code.
+    *   [x] Initialised GitHub repository (`WEDE5020`) and linked remote origin.
+    *   [x] Structured primary layout elements using HTML `<header>` and `<main>` tags.
+
+*   **📅 Phase 2: Design & Structure** *(30 October – 1 November 2026)*
+    *   [x] Designed a responsive horizontal navigation bar using CSS Flexbox.
+    *   [x] Handled background layout margins to stay consistent when stretched.
+    *   [x] Integrated structured sections for website services and primary imagery.
+
+*   **📅 Phase 3: Forms & Deployment** *(2 November 2026)*
+    *   [x] Created and structured the HTML contact form with custom Netlify attributes.
+    *   [x] Resolved terminal push/rebase synchronization conflicts with GitHub.
+    *   [x] **Successfully deployed live production site on Netlify.** 🎉
+
+*   **📅 Phase 4: Documentation & Final Polish** *(In Progress)*
+    *   [x] Built an interconnected website sitemap for repository navigation.
+    *   [ ] Add explicit timeline documentation to the README interface.
+    *   [ ] Perform accessibility check for structural keyboard navigation optimization.
+## goals
+my goal is tomake a website that is accessable to all . anyone can leave with someething they want in my website .
+I want the lacal or everyday people to have the right to good underwear or garments and feel a good feeling while buying it as underwear for a cheep price is hard to come buy in this economy but i want to make it possible.
+
 ## reference list
 Del Monte, C. (2020). 4 Ethical underwear brands made in South Africa. [online] twyg. Available at: https://twyg.co.za/4-ethical-underwear-brands-made-in-south-africa/ [Accessed 11 Sept. 2026].
 ThePowerMBA Global (2024). How to make a phenomenal contact page (+ examples). [online] Thepower.education. Available at: https://thepower.education/en/blog/how-to-make-a-phenomenal-contact-page-examples [Accessed 13 Aug. 2026].
