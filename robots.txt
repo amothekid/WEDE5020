@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://kaleidoscopic-marzipan-570ed0.netlify.app/sitemap.xml
+Sitemap: https://glittering-alpaca-f931f2.netlify.app/sitemap.xml
