@@ -1,80 +1,196 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css_assets/style.css">
-    <title>amosguidtogoodunderwear</title>
+    <title>Contact Us</title>
+
+    <style>
+        /* General styling */
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Georgia, serif;
+            background-color: #E8DED2;
+            color: #241A17;
+        }
+
+        /* Navigation bar */
+        nav {
+            background-color: #211714;
+            padding: 20px;
+            text-align: center;
+        }
+
+        nav a {
+            color: #F5EBDD;
+            text-decoration: none;
+            margin: 0 25px;
+            font-size: 16px;
+            letter-spacing: 2px;
+            display: inline-block;
+        }
+
+        nav a:hover {
+            color: #A52A2A;
+        }
+
+        /* Page heading */
+        .heading {
+            text-align: center;
+            padding: 35px 20px 10px;
+        }
+
+        .heading h1 {
+            font-size: 38px;
+            color: #651E1E;
+            letter-spacing: 3px;
+        }
+
+        .heading p {
+            color: #594237;
+            font-size: 16px;
+        }
+
+        /* Contact form container */
+        .contact-container {
+            width: 450px;
+            max-width: 85%;
+            margin: 25px auto 50px;
+            padding: 35px;
+            background-color: #F8F2EA;
+            border: 1px solid #8B5E46;
+            box-shadow: 0 5px 20px rgba(0,0,0,0.15);
+        }
+
+        .contact-container h2 {
+            text-align: center;
+            color: #651E1E;
+            letter-spacing: 2px;
+            margin-bottom: 25px;
+        }
+
+        /* Form labels */
+        label {
+            display: block;
+            margin-bottom: 8px;
+            color: #39251E;
+            font-weight: bold;
+        }
+
+        /* Input fields */
+        input, textarea, select {
+            width: 100%;
+            padding: 12px;
+            margin-bottom: 20px;
+            border: 1px solid #8B5E46;
+            background-color: #FFFDF9;
+            font-family: Georgia, serif;
+            font-size: 14px;
+            box-sizing: border-box;
+        }
+
+        input:focus, textarea:focus, select:focus {
+            outline: none;
+            border: 2px solid #8B2525;
+        }
+
+        textarea {
+            height: 120px;
+            resize: vertical;
+        }
+
+        /* Submit button */
+        button {
+            width: 100%;
+            padding: 14px;
+            background-color: #741F1F;
+            color: #FFFFFF;
+            border: none;
+            font-family: Georgia, serif;
+            font-size: 15px;
+            letter-spacing: 2px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #241A17;
+        }
+
+        /* Footer */
+        footer {
+            background-color: #211714;
+            color: #E8DED2;
+            text-align: center;
+            padding: 18px;
+            letter-spacing: 1px;
+        }
+    </style>
 </head>
+
 <body>
-    <header >
-        <!-- /* contact page */ -->
-                <img src="_images/sv3underwear (1).jpg"alt="amosguidtogoodunderwear hero shot">
-        <nav>
-            <ul>
-                <li><a href="indext.html">home</a></li>
-                <li><a href="about.html">about us</a></li>
-                <li><a href="services.html">Services</a></li>
-                <li><a href="enquiries.html">Enquiriese</a></li>
-                <li><a href="contact.html">contact</a></li>
-            </ul>
-        </nav>
-<main>
-    <table width="100px" border="1">
- <tr>               
-         <td>      
-         contact us! & quide
-         </td>
-       </tr>
-        
-    </table>
-        
-        <h1>Get in touch</h1>
-        <h3>Talk to one of our staff </h3>
-        <p> we are here to help you find any product or help u with any issues u need with our produc u need fixed .
-        </p>
-        <table width="80" border="1">
-            <tr>
-                <td style="font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;">
-                    central telephone line 
-                </td>
-                <td>
-                    +27 67 345 6879
-                </td>
-                <td>
-                      second line:  +27 98 746 0293
-                </td>
-            </tr>
-            <tr>
-                <td>
-                 general enquiries Email   
-                </td>
-                <td>
-                  theguidSA@gmail.co.za  
-                </td>
-                <td>
-                   theamo`sguideplus@gmail.com.za
-                </td>
-                <tr>
-                    <td>
-                       open: sat-frisun-closed 
-                    </td> 
-                    <td>
-                        9:00-14:00
-                    </td>
-                    <td>
-                        saturday-sunday=closed
-                    </td>
-                </tr>
-            </tr>
-        </table>
-        <h1>our main shops</h1>
-        <h2>1.(Pretoria) shop2 Menlyn park</h2>
-        <p> Adress: Atterrbury Rd ,Menlyn </p>
-        <h2>2.(Pretoria) shop3 Menlyn park</h2>
-        <p> Adress: Atterrbury Rd ,Menlyn </p>        <img src="_images/1imagelogo.png" alt="logo">
-</main> 
-    </header>
-    
+
+    <!-- Navigation -->
+    <nav>
+        <a href="index.html">HOME</a>
+        <a href="about.html">ABOUT</a>
+        <a href="services.html">SERVICES</a>
+        <a href="enquiries.html">ENQUIRIES</a>
+        <a href="contact.html">CONTACT</a>
+    </nav>
+
+    <!-- Heading -->
+    <div class="heading">
+        <h1>GET IN TOUCH</h1>
+        <p>We would love to hear from you.</p>
+    </div>
+
+    <!-- Contact Form -->
+    <div class="contact-container">
+
+        <h2>Contact Us</h2>
+
+        <form action="https://formsubmit.co/amogmeisiemahlatji@gmail.com" method="post">
+             <!-- honey comb -->
+           <input type="text" name="_honey" style="display: none;" >>
+
+            <!-- Disable Captcha -->
+            <input type="hidden" name="_captcha" value="false" >
+            <label for="name">Full Name</label>
+            <input type="text" name="name" id="name" name="name"
+            placeholder="Enter your full name" required>
+
+            <label for="email">Email Address</label>
+            <input type="email" name="email" id="email" name="email"
+            placeholder="Enter your email address" required>
+
+            <label for="phone">Phone Number</label>
+            <input type="tel" name="phone number" id="phone" name="phone"
+            placeholder="Enter your phone number">
+
+            <label for="subject">Subject</label>
+            <select id="subject" name="sunject" name="subject">
+                <option value="">Select a subject</option>
+                <option value="general">General Information</option>
+                <option value="services">Services</option>
+                <option value="feedback">Feedback</option>
+                <option value="other">Other</option>
+            </select>
+
+            <label for="message">Your Message</label>
+            <textarea id="message" name="message"
+            placeholder="Write your message here..." required></textarea>
+
+            <button type="submit">SEND MESSAGE</button>
+
+        </form>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2026 Mature Elegance. All Rights Reserved.</p>
+    </footer>
+
 </body>
 </html>

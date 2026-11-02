@@ -1,28 +1,372 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css_assets/style.css">
-    <title>amosguidtogoodunderwear</title>
+    <title>Mature Elegance | Enquiries</title>
+    <link rel="stylesheet" href="style.css">
+
+    <!-- INTERNAL CSS -->
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Georgia, "Times New Roman", serif;
+            background-color: #f5efe7;
+            color: #171414;
+            line-height: 1.7;
+        }
+
+        /* HEADER */
+
+        header {
+            background-color: #171414;
+            color: #f5efe7;
+            text-align: center;
+            padding: 35px;
+            border-bottom: 4px solid #8b2635;
+        }
+
+        .logo {
+            font-size: 27px;
+            font-weight: bold;
+            letter-spacing: 5px;
+        }
+
+        .logo span {
+            color: #bd7d70;
+        }
+
+        .tagline {
+            color: #c9b9ae;
+            font-size: 14px;
+            font-style: italic;
+            margin-top: 5px;
+        }
+
+        /* MAIN CONTENT */
+
+        .container {
+            width: 800px;
+            margin: 60px auto;
+        }
+
+        .intro {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+
+        .eyebrow {
+            color: #8b2635;
+            font-size: 12px;
+            font-weight: bold;
+            letter-spacing: 3px;
+            margin-bottom: 12px;
+        }
+
+        h1 {
+            font-size: 48px;
+            color: #291b17;
+            margin-bottom: 15px;
+        }
+
+        h1 span,
+        .comments-section h2 span {
+            color: #8b2635;
+            font-style: italic;
+        }
+
+        .intro p:last-child {
+            color: #8d7b70;
+            font-size: 16px;
+        }
+
+        /* ENQUIRIES FORM */
+
+        form {
+            background-color: #fffaf5;
+            padding: 40px;
+            border: 1px solid #e2d3c7;
+            border-top: 4px solid #4b2e25;
+            box-shadow: 0 15px 45px rgba(41, 27, 23, 0.08);
+        }
+
+        h2 {
+            color: #291b17;
+            font-size: 26px;
+            margin-bottom: 22px;
+        }
+
+        .form-row {
+            display: flex;
+            gap: 20px;
+        }
+
+        .field {
+            display: flex;
+            flex-direction: column;
+            flex: 1;
+            margin-bottom: 22px;
+        }
+
+        label {
+            color: #4b2e25;
+            font-size: 14px;
+            font-weight: bold;
+            margin-bottom: 8px;
+        }
+
+        input,
+        select,
+        textarea {
+            width: 100%;
+            padding: 14px;
+            font-family: Arial, sans-serif;
+            font-size: 14px;
+            color: #171414;
+            background-color: #fffdf9;
+            border: 1px solid #d8c8bb;
+            border-radius: 3px;
+            outline: none;
+        }
+
+        input:focus,
+        select:focus,
+        textarea:focus {
+            border-color: #8b2635;
+        }
+
+        textarea {
+            resize: vertical;
+        }
+
+        input::placeholder,
+        textarea::placeholder {
+            color: #a4978e;
+        }
+
+        .divider {
+            height: 1px;
+            background-color: #e4d7cc;
+            margin: 15px 0 30px;
+        }
+
+        .helper {
+            color: #8d7b70;
+            font-size: 14px;
+            margin-bottom: 25px;
+        }
+
+        /* SUBMIT BUTTON */
+
+        button {
+            width: 100%;
+            padding: 16px;
+            background-color: #8b2635;
+            color: #fffaf5;
+            border: 1px solid #8b2635;
+            font-family: Georgia, serif;
+            font-size: 15px;
+            letter-spacing: 1px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #291b17;
+            border-color: #291b17;
+        }
+
+        #formStatus {
+            margin-top: 15px;
+            color: #4b2e25;
+            font-size: 14px;
+        }
+
+        /* COMMENTS SECTION */
+
+        .comments-section {
+            text-align: center;
+            margin-top: 60px;
+            padding: 35px 20px;
+        }
+
+        .comments-section h2 {
+            font-size: 32px;
+        }
+
+        .comments-section p {
+            color: #8d7b70;
+            margin-bottom: 12px;
+        }
+
+        .note {
+            font-size: 12px;
+            font-style: italic;
+        }
+
+        /* FOOTER */
+
+        footer {
+            background-color: #171414;
+            color: #c9b9ae;
+            text-align: center;
+            padding: 25px;
+            font-size: 12px;
+            letter-spacing: 1px;
+        }
+    </style>
 </head>
+
 <body>
-    <header >
-        <!-- /* emquires page */ -->
-        
-            <img src="_images/sv3underwear (1).jpg"alt="amosguidtogoodunderwear head shot ">
+
+    <!-- HEADER -->
+    <header>
+        <p class="logo">MATURE <span>ELEGANCE</span></p>
+        <p class="tagline">
+            Your thoughts. Your voice. Your elegance.
+        </p>
+         <!-- navigation -->
         <nav>
             <ul>
-                <li><a href="indext.html">home</a></li>
+                <li><a href="index.html">home</a></li>
                 <li><a href="about.html">about us</a></li>
                 <li><a href="services.html">Services</a></li>
                 <li><a href="enquiries.html">Enquiriese</a></li>
                 <li><a href="contact.html">contact</a></li>
             </ul>
-        </nav>
-        <main>
-            <a href="https://docs.google.com/forms/d/e/1FAIpQLSdifU1O8sF4ZZnHF8BYpElSMj6Jvh4WnIkZ7nYPwWEkhVHShg/viewform?usp=publish-editor" visite gooogle></a>
-        </main>
+        </nav> 
     </header>
+
+    <!-- MAIN CONTENT -->
+    <main class="container">
+
+        <section class="intro">
+            <p class="eyebrow">WE WOULD LOVE TO HEAR FROM YOU</p>
+
+            <h1>Make an <span>Enquiry.</span></h1>
+
+            <p>
+                Have a question, suggestion, or something to share?
+                Complete the form below and leave us a message.
+            </p>
+        </section>
+
+        <!-- ENQUIRY FORM -->
+        <form id="enquiryForm">
+
+            <h2>Personal Details</h2>
+
+            <div class="form-row">
+
+                <div class="field">
+                    <label for="name">Full Name</label>
+                    <input type="text" id="name" name="name"
+                           placeholder="Enter your full name" required>
+                </div>
+
+                <div class="field">
+                    <label for="email">Email Address</label>
+                    <input type="email" id="email" name="email"
+                           placeholder="you@example.com" required>
+                </div>
+
+            </div>
+
+            <div class="field">
+                <label for="phone">Phone Number (Optional)</label>
+                <input type="tel" id="phone" name="phone"
+                       placeholder="Enter your phone number">
+            </div>
+
+            <div class="field">
+                <label for="subject">Enquiry Subject</label>
+
+                <select id="subject" name="subject" required>
+                    <option value="">Select a subject</option>
+                    <option value="general">General Enquiry</option>
+                    <option value="services">Services</option>
+                    <option value="collaboration">Collaboration</option>
+                    <option value="feedback">Feedback</option>
+                    <option value="other">Other</option>
+                </select>
+            </div>
+
+            <div class="field">
+                <label for="message">Your Message</label>
+
+                <textarea id="message" name="message" rows="6"
+                          placeholder="Write your enquiry here..."
+                          required></textarea>
+            </div>
+
+            <div class="divider"></div>
+
+            <!-- COMMENTS -->
+            <h2>Comments &amp; Feedback</h2>
+
+            <p class="helper">
+                Your opinions matter. Share your thoughts, ideas,
+                or suggestions with us.
+            </p>
+
+            <div class="field">
+                <label for="comments">Leave a Comment</label>
+
+                <textarea id="comments" name="comments" rows="4"
+                          placeholder="Tell us what you think..."></textarea>
+            </div>
+
+            <button type="submit">Submit Enquiry &rarr;</button>
+
+            <p id="formStatus" role="status" aria-live="polite"></p>
+
+        </form>
+
+        <!-- COMMENTS INFORMATION -->
+        <section class="comments-section">
+
+            <p class="eyebrow">YOUR VOICE MATTERS</p>
+
+            <h2>Comments &amp; <span>Thoughts.</span></h2>
+
+            <p>
+                We appreciate every question, suggestion,
+                and thoughtful comment shared with us.
+            </p>
+
+            <p class="note">
+                Your feedback is valuable to us.
+            </p>
+
+        </section>
+
+    </main>
+
+    <!-- FOOTER -->
+    <footer>
+        <p>&copy; 2026 Mature Elegance. All rights reserved.</p>
+    </footer>
+
+    <!-- BASIC FORM INTERACTION -->
+    <script>
+        const form = document.getElementById("enquiryForm");
+        const status = document.getElementById("formStatus");
+
+        form.addEventListener("submit", function(event) {
+            event.preventDefault();
+
+            status.textContent =
+                "Thank you for your enquiry! A backend is needed to send and save your message.";
+
+            status.style.backgroundColor = "#eee2d5";
+            status.style.padding = "15px";
+        });
+    </script>
+
 </body>
 </html>

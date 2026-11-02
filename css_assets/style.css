@@ -1,14 +1,32 @@
-/*css reset*/
-*{
-    margin: 0px;
-    padding: 0px;
-    box-sizing: border-box;
+/* reset */
+
+/* NAVIGATION BAR */
+
+.navbar {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 35px;
+    padding: 18px 0;
+    border-top: 1px solid #4b2e25;
 }
 
+.navbar a {
+    color: #f5efe7;
+    text-decoration: none;
+    font-size: 14px;
+    letter-spacing: 1px;
+    transition: color 0.3s ease;
+}
 
+.navbar a:hover {
+    color: #bd7d70;
+}
 
-
-
-
-
+.navbar a.active {
+    color: #bd7d70;
+    border-bottom: 2px solid #8b2635;
+    padding-bottom: 5px;
+}
 
