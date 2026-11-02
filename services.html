@@ -1,60 +1,526 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css_assets/style.css">
-    <title>amosguidtogoodunderwear</title>
+    <title>Our Services | Elegant Intimates</title>
+
+
+<meta name="description" content="Explore Elegant Intimates services, including our elegant collection, personal customer assistance and convenient shopping experience.">
+
+<meta name="keywords" content="Elegant Intimates services, undergarment collection, personal assistance, convenient shopping">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<meta name="description" content="Get in touch with Elegant Intimates for customer assistance, general questions, feedback and support. We would love to hear from you.">
+
+<meta name="keywords" content="Elegant Intimates, contact us, customer assistance, customer feedback, contact form">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <style>
+
+        body {
+            margin: 0;
+            padding: 0;
+            background-color: #f5eee7;
+            font-family: Georgia, serif;
+            color: #3b211b;
+        }
+
+        /* Navigation Bar */
+
+        nav {
+            background-color: #4a1717;
+            padding: 25px;
+            text-align: center;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 25px;
+            font-size: 16px;
+            letter-spacing: 2px;
+        }
+
+        nav a:hover {
+            color: #d9b9a5;
+        }
+
+        /* Heading */
+
+        header {
+            background-color: #6b2925;
+            color: white;
+            padding: 45px;
+            text-align: center;
+        }
+
+        header h1 {
+            font-size: 40px;
+            letter-spacing: 4px;
+            font-weight: normal;
+        }
+
+        header p {
+            letter-spacing: 2px;
+        }
+
+        /* Introduction */
+
+        .intro {
+            text-align: center;
+            padding: 30px;
+        }
+
+        .intro h2 {
+            color: #702b27;
+            font-size: 30px;
+            font-weight: normal;
+        }
+
+        .intro p {
+            font-size: 17px;
+            line-height: 1.8;
+        }
+
+        /* Services Gallery */
+
+        .services-container {
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+            padding: 30px;
+            flex-wrap: wrap;
+        }
+
+        .service {
+            background-color: white;
+            width: 300px;
+            padding: 15px;
+            text-align: center;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+        }
+
+        .service img {
+            width: 100%;
+            height: 280px;
+            object-fit: cover;
+        }
+
+        .service h3 {
+            color: #702b27;
+            font-size: 23px;
+            font-weight: normal;
+        }
+
+        .service p {
+            color: #5b4035;
+            line-height: 1.7;
+        }
+
+        /* Responsive Design */
+
+        @media screen and (max-width: 768px) {
+
+            .services-container {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .service {
+                width: 80%;
+            }
+
+            nav a {
+                display: inline-block;
+                margin: 10px;
+            }
+
+        }
+
+        /* Footer */
+
+        footer {
+            background-color: #4a1717;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            margin-top: 40px;
+        }
+    /* SERVICES PAGE ANIMATIONS */
+
+/* Service Card Animation */
+
+.service {
+    animation: fadeService 1.2s ease-in;
+    transition: transform 0.4s ease,
+                box-shadow 0.4s ease;
+}
+
+.service:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+}
+
+@keyframes fadeService {
+
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+
+}
+
+/* Image Hover Animation */
+
+.service img {
+    cursor: pointer;
+    transition: transform 0.4s ease;
+}
+
+.service img:hover {
+    transform: scale(1.04);
+}
+
+/* Image Lightbox */
+
+.lightbox {
+    display: none;
+    position: fixed;
+    z-index: 1000;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(35,15,12,0.9);
+    justify-content: center;
+    align-items: center;
+}
+
+.lightbox img {
+    max-width: 85%;
+    max-height: 80%;
+    border: 5px solid white;
+    object-fit: contain;
+}
+
+.close {
+    position: absolute;
+    top: 25px;
+    right: 40px;
+    color: white;
+    font-size: 45px;
+    cursor: pointer;
+}
+/* SERVICE SEARCH */
+
+.service-search {
+    text-align: center;
+    padding: 20px;
+}
+
+.service-search h2 {
+    color: #702b27;
+    font-weight: normal;
+}
+
+#serviceSearch {
+    width: 60%;
+    padding: 14px;
+    border: 1px solid #b89a88;
+    font-family: Georgia, serif;
+    font-size: 16px;
+    box-sizing: border-box;
+}
+
+#noResults {
+    display: none;
+    text-align: center;
+    color: #702b27;
+    padding: 20px;
+    font-size: 17px;
+}
+/* DYNAMIC CONTENT */
+
+.extra-details {
+    display: none;
+    color: #5b4035;
+    line-height: 1.7;
+}
+
+.service button {
+    background-color: #5b211d;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    margin-top: 10px;
+    cursor: pointer;
+    font-family: Georgia, serif;
+    letter-spacing: 1px;
+}
+
+.service button:hover {
+    background-color: #98715e;
+}
+    </style>
+     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
+
+    <!-- Navigation -->
+
+    <nav>
+        <a href="index.html">HOME</a>
+        <a href="about.html">ABOUT</a>
+        <a href="services.html">SERVICES</a>
+        <a href="enquiries.html">ENQUIRIES</a>
+        <a href="contact.html">CONTACT</a>
+    </nav>
+
+
+    <!-- Heading -->
+
     <header>
-        <!-- /* service pages  */ -->
-            <img src="_images/bodypic3.jpg"alt="amosguidtogoodunderwear"> <img src="_images/1imagelogo.png" alt="log">
-        <nav>
-            <ul>
-                <li><a href="index.html">home</a></li>
-                <li><a href="about.html">about us</a></li>
-                <li><a href="services.html">Services</a></li>
-                <li><a href="enquiries.html">Enquiriese</a></li>
-                <li><a href="contact.html">contact</a></li>
-            </ul>
-        </nav>
-       <main>
-        
-        <div class="holds">
-            <div>
-               <img src="_images/bodypic5.jpg"alt="it is a black bodysuit that has a metal chain strap with a highcut that show  more of thelower body">
-            </div>
-            
-            <div>
-                <p style="width: 50%;">
-                    we here know what will make u the best u can be abd feel
-                </p>
-            </div>
+
+        <h1>OUR SERVICES</h1>
+
+        <p>COMFORT • QUALITY • ELEGANCE</p>
+
+    </header>
+
+
+    <!-- Introduction -->
+
+    <section class="intro">
+
+        <h2>What We Offer</h2>
+
+        <p>
+            At Elegant Intimates, we believe that every detail
+            matters. We offer a selection of services designed
+            to make your shopping experience comfortable,
+            enjoyable and convenient.
+        </p>
+
+    </section>
+        <!-- SEARCH SERVICES -->
+
+<section class="service-search">
+
+    <h2>Search Our Services</h2>
+
+    <input
+        type="text"
+        id="serviceSearch"
+        placeholder="Search for a service..."
+        onkeyup="searchServices()">
+
+</section>
+
+    <!-- Three Services and Pictures -->
+        <p id="noResults">
+    Sorry, no matching services were found.
+</p>
+
+    <div class="services-container">
+
+        <div class="service">
+
+            <img src="_images/bodypic2.jpg"
+                    alt="Undergarment collection"
+                        onclick="openLightbox(this.src)">
+
+            <h3>Our Collection</h3>
+
+            <p>
+                Explore our selection of comfortable and
+                elegant undergarments, designed for
+                everyday wear and different occasions.
+            </p>
+     <p class="extra-details">
+    Our collection focuses on comfort, quality and elegant designs.
+    We offer different styles to suit different preferences and occasions.
+</p>
+
+<button onclick="toggleDetails(this)">VIEW MORE DETAILS</button>
+        </div>
+
+
+        <div class="service">
+
+                <img src="_images/bodypic3.jpg"
+                   alt="Customer shopping experience"
+                     onclick="openLightbox(this.src)">
+
+            <h3>Personal Assistance</h3>
+
+            <p>
+                We offer friendly customer assistance to
+                help you find products that suit your
+                preferences and shopping needs.
+            </p>
+            <p class="extra-details">
+    Our customer assistance helps visitors with product information,
+    general questions and guidance when choosing suitable products.
+</p>
+
+<button onclick="toggleDetails(this)">VIEW MORE DETAILS</button>
 
         </div>
-        /* second container*/
-        <div class="contains">
-            <div>
-                <img src="_images/bodypic2.jpg">
-            </div>
-            <div>
-                <p>
-                    we here for all genders 
-                </p>
-            </div>
+
+
+        <div class="service">
+
+            <img src="_images/bodypic4.jpg"
+                alt="Elegant packaging"
+                    onclick="openLightbox(this.src)">
+
+            <h3>Convenient Shopping</h3>
+
+            <p>
+                Enjoy a simple and convenient shopping
+                experience with easy access to our
+                products and customer support.
+            </p>
+             <p class="extra-details">
+    We aim to make shopping simple through accessible product
+    information, helpful communication and customer support.
+</p>
+
+<button onclick="toggleDetails(this)">VIEW MORE DETAILS</button>   
         </div>
-        /* third container
-        <div class="fetch">
-            <div>
-                <img src="_images/servicpic3.jpg">
-            </div>
-            <div>
-                from us you will have anything your comfort desires 
-            </div>
-        </div>
-       
-       </main>
-       <footer></footer>
+
+    </div>
+
+     <!-- IMAGE LIGHTBOX -->
+
+<div id="myLightbox"
+class="lightbox"
+onclick="closeLightbox()">
+
+    <span class="close">&times;</span>
+
+    <img id="lightboxImage"
+    src=""
+    alt="Enlarged service picture">
+
+</div>
+
+    <!-- Footer -->
+
+    <footer>
+
+        <p>© 2026 Elegant Intimates | All Rights Reserved</p>
+
+    </footer>
+               <script>
+
+// OPEN IMAGE LIGHTBOX
+
+function openLightbox(imageSource) {
+
+    let lightbox = document.getElementById("myLightbox");
+
+    let image = document.getElementById("lightboxImage");
+
+    image.src = imageSource;
+
+    lightbox.style.display = "flex";
+
+}
+
+
+// CLOSE IMAGE LIGHTBOX
+
+function closeLightbox() {
+
+    document.getElementById("myLightbox").style.display = "none";
+
+}
+
+
+// CLOSE LIGHTBOX USING ESCAPE KEY
+
+document.addEventListener("keydown", function(event) {
+
+    if (event.key === "Escape") {
+
+        closeLightbox();
+
+    }
+
+});
+
+// SEARCH AND FILTER SERVICES
+
+function searchServices() {
+
+    let searchInput = document.getElementById("serviceSearch").value.toLowerCase();
+
+    let services = document.querySelectorAll(".service");
+
+    let noResults = document.getElementById("noResults");
+
+    let found = 0;
+
+    services.forEach(function(service) {
+
+        let serviceText = service.innerText.toLowerCase();
+
+        if (serviceText.includes(searchInput)) {
+
+            service.style.display = "block";
+            found++;
+
+        } else {
+
+            service.style.display = "none";
+
+        }
+
+    });
+
+    if (found === 0) {
+
+        noResults.style.display = "block";
+
+    } else {
+
+        noResults.style.display = "none";
+
+    }
+
+}
+// DYNAMIC CONTENT
+
+function toggleDetails(button) {
+
+    let details = button.previousElementSibling;
+
+    if (details.style.display === "block") {
+
+        details.style.display = "none";
+
+        button.innerHTML = "VIEW MORE DETAILS";
+
+    } else {
+
+        details.style.display = "block";
+
+        button.innerHTML = "VIEW LESS";
+
+    }
+
+}
+
+
+</script>
+
 </body>
 </html>

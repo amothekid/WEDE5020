@@ -1,137 +1,179 @@
 
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact Us</title>
 
-    <style>
-        /* General styling */
-        body {
-            margin: 0;
-            padding: 0;
-            font-family: Georgia, serif;
-            background-color: #E8DED2;
-            color: #241A17;
-        }
+<title>Contact Us | Elegant Intimates</title>
 
-        /* Navigation bar */
-        nav {
-            background-color: #211714;
-            padding: 20px;
-            text-align: center;
-        }
+<style>
 
-        nav a {
-            color: #F5EBDD;
-            text-decoration: none;
-            margin: 0 25px;
-            font-size: 16px;
-            letter-spacing: 2px;
-            display: inline-block;
-        }
+body {
+    margin: 0;
+    background-color: #f5eee7;
+    font-family: Georgia, serif;
+    color: #3b211b;
+}
 
-        nav a:hover {
-            color: #A52A2A;
-        }
+/* Navigation */
 
-        /* Page heading */
-        .heading {
-            text-align: center;
-            padding: 35px 20px 10px;
-        }
+nav {
+    background-color: #4a1717;
+    padding: 25px;
+    text-align: center;
+}
 
-        .heading h1 {
-            font-size: 38px;
-            color: #651E1E;
-            letter-spacing: 3px;
-        }
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 20px;
+    letter-spacing: 2px;
+}
 
-        .heading p {
-            color: #594237;
-            font-size: 16px;
-        }
+nav a:hover {
+    color: #d9b9a5;
+}
 
-        /* Contact form container */
-        .contact-container {
-            width: 450px;
-            max-width: 85%;
-            margin: 25px auto 50px;
-            padding: 35px;
-            background-color: #F8F2EA;
-            border: 1px solid #8B5E46;
-            box-shadow: 0 5px 20px rgba(0,0,0,0.15);
-        }
+/* Heading */
 
-        .contact-container h2 {
-            text-align: center;
-            color: #651E1E;
-            letter-spacing: 2px;
-            margin-bottom: 25px;
-        }
+header {
+    background-color: #6b2925;
+    color: white;
+    text-align: center;
+    padding: 35px;
+}
 
-        /* Form labels */
-        label {
-            display: block;
-            margin-bottom: 8px;
-            color: #39251E;
-            font-weight: bold;
-        }
+header h1 {
+    font-size: 38px;
+    font-weight: normal;
+    letter-spacing: 4px;
+}
 
-        /* Input fields */
-        input, textarea, select {
-            width: 100%;
-            padding: 12px;
-            margin-bottom: 20px;
-            border: 1px solid #8B5E46;
-            background-color: #FFFDF9;
-            font-family: Georgia, serif;
-            font-size: 14px;
-            box-sizing: border-box;
-        }
+/* Contact Form */
 
-        input:focus, textarea:focus, select:focus {
-            outline: none;
-            border: 2px solid #8B2525;
-        }
+.form-container {
+    background-color: white;
+    width: 60%;
+    margin: 40px auto;
+    padding: 35px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
 
-        textarea {
-            height: 120px;
-            resize: vertical;
-        }
+.form-container h2 {
+    color: #702b27;
+    text-align: center;
+    font-weight: normal;
+}
 
-        /* Submit button */
-        button {
-            width: 100%;
-            padding: 14px;
-            background-color: #741F1F;
-            color: #FFFFFF;
-            border: none;
-            font-family: Georgia, serif;
-            font-size: 15px;
-            letter-spacing: 2px;
-            cursor: pointer;
-        }
+label {
+    display: block;
+    margin-top: 18px;
+    color: #5b4035;
+}
 
-        button:hover {
-            background-color: #241A17;
-        }
+input, select, textarea {
+    width: 100%;
+    padding: 12px;
+    margin-top: 8px;
+    border: 1px solid #b89a88;
+    box-sizing: border-box;
+    font-family: Georgia, serif;
+}
 
-        /* Footer */
-        footer {
-            background-color: #211714;
-            color: #E8DED2;
-            text-align: center;
-            padding: 18px;
-            letter-spacing: 1px;
-        }
-    </style>
+textarea {
+    height: 130px;
+}
+
+button {
+    background-color: #5b211d;
+    color: white;
+    padding: 14px 30px;
+    border: none;
+    margin-top: 20px;
+    cursor: pointer;
+    letter-spacing: 2px;
+}
+
+button:hover {
+    background-color: #98715e;
+}
+
+#response {
+    color: #702b27;
+    text-align: center;
+    margin-top: 20px;
+}
+
+/* Responsive Design */
+
+@media screen and (max-width: 768px) {
+
+    .form-container {
+        width: 85%;
+        padding: 20px;
+    }
+
+    nav a {
+        display: inline-block;
+        margin: 10px;
+    }
+
+}
+
+/* Footer */
+
+footer {
+    background-color: #4a1717;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+/* Interactive Map Locations */
+
+.locations {
+    width: 85%;
+    margin: 40px auto;
+    text-align: center;
+}
+
+.locations h2 {
+    color: #702b27;
+    font-weight: normal;
+}
+
+.map-container {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    flex-wrap: wrap;
+}
+
+.map-card {
+    background-color: white;
+    padding: 15px;
+    width: 45%;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    box-sizing: border-box;
+}
+
+.map-card h3 {
+    color: #6b2925;
+}
+
+.map-card iframe {
+    width: 100%;
+    height: 300px;
+    border: none;
+}
+
+
+</style>
+<link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
-    <!-- Navigation -->
+<!-- Navigation -->
+
     <nav>
         <a href="index.html">HOME</a>
         <a href="about.html">ABOUT</a>
@@ -140,57 +182,233 @@
         <a href="contact.html">CONTACT</a>
     </nav>
 
-    <!-- Heading -->
-    <div class="heading">
-        <h1>GET IN TOUCH</h1>
-        <p>We would love to hear from you.</p>
+<!-- Heading -->
+
+<header>
+
+    <h1>CONTACT US</h1>
+
+    <p>WE WOULD LOVE TO HEAR FROM YOU</p>
+
+</header>
+
+<!-- Contact Form -->
+
+<div class="form-container">
+
+<h2>Get In Touch</h2>
+
+<p>
+Have a question or need assistance?
+Complete the form below to send us a message.
+</p>
+
+<form id="contactForm"
+name="contact"
+method="POST"
+data-netlify="true"
+netlify-honeypot="bot-field"
+novalidate>
+
+<input type="hidden" name="form-name" value="contact">
+
+<p hidden>
+    <label>Don't fill this out:
+        <input name="bot-field">
+    </label>
+</p>
+
+    <label>Full Name:</label>
+
+    <input type="text"
+    id="fullname"
+    name="Full Name"
+    placeholder="Enter your full name"
+    required minlength="3"
+    maxlength="50">
+
+    <label>Email Address:</label>
+
+    <input type="email"
+    id="email"
+    name="Email"
+    placeholder="example@gmail.com"
+    required>
+
+    <label>Phone Number:</label>
+
+    <input type="tel"
+    id="phone"
+    name="Phone Number"
+    placeholder="Enter your phone number"
+    pattern="[0-9+\-\s]{10,15}"
+    required>
+
+    <label>Type Of Message:</label>
+
+    <select id="subject" name="Subject" required>
+
+        <option value="">Select a subject</option>
+        <option value="General Question">General Question</option>
+        <option value="Customer Feedback">Customer Feedback</option>
+        <option value="Complaint">Complaint</option>
+        <option value="Customer Assistance">Customer Assistance</option>
+
+    </select>
+
+    <label>Your Message:</label>
+
+    <textarea id="message"
+    name="Message"
+    placeholder="Write your message here..."
+    required minlength="10"
+    maxlength="1000"></textarea>
+
+    <button type="submit">SEND MESSAGE</button>
+
+</form>
+
+<p id="response" role="status"></p>
+
+</div>
+<!-- Interactive Map Locations -->
+
+<section class="locations">
+
+    <h2>Find Our Locations</h2>
+
+    <p>Explore our selected locations in South Africa.</p>
+
+    <div class="map-container">
+
+        <div class="map-card">
+
+            <h3>Pretoria – Menlyn</h3>
+
+            <iframe
+                src="https://www.google.com/maps?q=Menlyn+Maine+Pretoria&output=embed"
+                loading="lazy"
+                title="Map showing Menlyn Maine in Pretoria">
+            </iframe>
+
+        </div>
+
+        <div class="map-card">
+
+            <h3>Cape Town – V&A Waterfront</h3>
+
+            <iframe
+                src="https://www.google.com/maps?q=V%26A+Waterfront+Cape+Town&output=embed"
+                loading="lazy"
+                title="Map showing V&A Waterfront in Cape Town">
+            </iframe>
+
+        </div>
+
     </div>
 
-    <!-- Contact Form -->
-    <div class="contact-container">
+</section>
 
-        <h2>Contact Us</h2>
+<!-- Footer -->
 
-        <form action="https://formsubmit.co/amogmeisiemahlatji@gmail.com" method="post">
-             <!-- honey comb -->
-           <input type="text" name="_honey" style="display: none;" >>
+<footer>
 
-            <!-- Disable Captcha -->
-            <input type="hidden" name="_captcha" value="false" >
-            <label for="name">Full Name</label>
-            <input type="text" name="name" id="name" name="name"
-            placeholder="Enter your full name" required>
+    <p>© 2026 Elegant Intimates | All Rights Reserved</p>
 
-            <label for="email">Email Address</label>
-            <input type="email" name="email" id="email" name="email"
-            placeholder="Enter your email address" required>
+</footer>
 
-            <label for="phone">Phone Number</label>
-            <input type="tel" name="phone number" id="phone" name="phone"
-            placeholder="Enter your phone number">
+<!-- JavaScript -->
+<script>
 
-            <label for="subject">Subject</label>
-            <select id="subject" name="sunject" name="subject">
-                <option value="">Select a subject</option>
-                <option value="general">General Information</option>
-                <option value="services">Services</option>
-                <option value="feedback">Feedback</option>
-                <option value="other">Other</option>
-            </select>
+const contactForm = document.getElementById("contactForm");
 
-            <label for="message">Your Message</label>
-            <textarea id="message" name="message"
-            placeholder="Write your message here..." required></textarea>
+contactForm.addEventListener("submit", async function(event) {
 
-            <button type="submit">SEND MESSAGE</button>
+    event.preventDefault();
 
-        </form>
-    </div>
+    let response = document.getElementById("response");
 
-    <!-- Footer -->
-    <footer>
-        <p>&copy; 2026 Mature Elegance. All Rights Reserved.</p>
-    </footer>
+    let name = document.getElementById("fullname");
+    let email = document.getElementById("email");
+    let phone = document.getElementById("phone");
+    let subject = document.getElementById("subject");
+    let message = document.getElementById("message");
+
+    // Client-side validation
+
+    if (name.value.trim().length < 3) {
+        response.innerHTML = "Please enter your full name.";
+        return;
+    }
+
+    if (!email.checkValidity()) {
+        response.innerHTML = "Please enter a valid email address.";
+        return;
+    }
+
+    if (!phone.checkValidity()) {
+        response.innerHTML = "Please enter a valid phone number.";
+        return;
+    }
+
+    if (subject.value === "") {
+        response.innerHTML = "Please select a message subject.";
+        return;
+    }
+
+    if (message.value.trim().length < 10) {
+        response.innerHTML = "Your message must contain at least 10 characters.";
+        return;
+    }
+
+    // AJAX submission
+
+    response.style.color = "#702b27";
+    response.innerHTML = "Sending your message...";
+
+try {
+    let formData = new FormData(contactForm);
+    
+    // Add this line (replace "contact" with the actual name="..." of your HTML form)
+    formData.append("form-name", "contact"); 
+
+    let result = await fetch("/", {
+        method: "POST",
+        headers: {
+            "Content-Type": "application/x-www-form-urlencoded"
+        },
+        body: new URLSearchParams(formData).toString()
+    });
+
+
+        if (result.ok) {
+
+            response.innerHTML =
+            "Thank you! Your message has been submitted successfully.";
+
+            contactForm.reset();
+
+        } else {
+
+            throw new Error("Submission failed");
+
+        }
+
+    } catch (error) {
+
+        response.style.color = "#b00020";
+
+        response.innerHTML =
+        "Sorry, your message could not be submitted. Please try again.";
+
+    }
+
+});/* Interactive Map Locations */
+
+
+
+</script>
+
 
 </body>
 </html>

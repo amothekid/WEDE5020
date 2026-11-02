@@ -1,372 +1,288 @@
-
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mature Elegance | Enquiries</title>
-    <link rel="stylesheet" href="style.css">
 
-    <!-- INTERNAL CSS -->
-    <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
+<title>Enquiries | Elegant Intimates</title>
 
-        body {
-            font-family: Georgia, "Times New Roman", serif;
-            background-color: #f5efe7;
-            color: #171414;
-            line-height: 1.7;
-        }
+<meta name="description" content="Contact Elegant Intimates with questions about product information, prices, availability, business partnerships and other enquiries.">
 
-        /* HEADER */
+<meta name="keywords" content="Elegant Intimates enquiries, product information, product prices, product availability, customer enquiries">
 
-        header {
-            background-color: #171414;
-            color: #f5efe7;
-            text-align: center;
-            padding: 35px;
-            border-bottom: 4px solid #8b2635;
-        }
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-        .logo {
-            font-size: 27px;
-            font-weight: bold;
-            letter-spacing: 5px;
-        }
+<style>
 
-        .logo span {
-            color: #bd7d70;
-        }
+body {
+    margin: 0;
+    background-color: #f5eee7;
+    font-family: Georgia, serif;
+    color: #3b211b;
+}
 
-        .tagline {
-            color: #c9b9ae;
-            font-size: 14px;
-            font-style: italic;
-            margin-top: 5px;
-        }
+/* Navigation */
 
-        /* MAIN CONTENT */
+nav {
+    background-color: #4a1717;
+    padding: 25px;
+    text-align: center;
+}
 
-        .container {
-            width: 800px;
-            margin: 60px auto;
-        }
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 20px;
+    letter-spacing: 2px;
+}
 
-        .intro {
-            text-align: center;
-            margin-bottom: 40px;
-        }
+nav a:hover {
+    color: #d9b9a5;
+}
 
-        .eyebrow {
-            color: #8b2635;
-            font-size: 12px;
-            font-weight: bold;
-            letter-spacing: 3px;
-            margin-bottom: 12px;
-        }
+/* Heading */
 
-        h1 {
-            font-size: 48px;
-            color: #291b17;
-            margin-bottom: 15px;
-        }
+header {
+    background-color: #6b2925;
+    color: white;
+    text-align: center;
+    padding: 35px;
+}
 
-        h1 span,
-        .comments-section h2 span {
-            color: #8b2635;
-            font-style: italic;
-        }
+header h1 {
+    font-size: 38px;
+    font-weight: normal;
+    letter-spacing: 4px;
+}
 
-        .intro p:last-child {
-            color: #8d7b70;
-            font-size: 16px;
-        }
+/* Form */
 
-        /* ENQUIRIES FORM */
+.form-container {
+    background-color: white;
+    width: 60%;
+    margin: 40px auto;
+    padding: 35px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
 
-        form {
-            background-color: #fffaf5;
-            padding: 40px;
-            border: 1px solid #e2d3c7;
-            border-top: 4px solid #4b2e25;
-            box-shadow: 0 15px 45px rgba(41, 27, 23, 0.08);
-        }
+.form-container h2 {
+    color: #702b27;
+    text-align: center;
+    font-weight: normal;
+}
 
-        h2 {
-            color: #291b17;
-            font-size: 26px;
-            margin-bottom: 22px;
-        }
+label {
+    display: block;
+    margin-top: 18px;
+    color: #5b4035;
+}
 
-        .form-row {
-            display: flex;
-            gap: 20px;
-        }
+input, select, textarea {
+    width: 100%;
+    padding: 12px;
+    margin-top: 8px;
+    border: 1px solid #b89a88;
+    box-sizing: border-box;
+    font-family: Georgia, serif;
+}
 
-        .field {
-            display: flex;
-            flex-direction: column;
-            flex: 1;
-            margin-bottom: 22px;
-        }
+textarea {
+    height: 120px;
+}
 
-        label {
-            color: #4b2e25;
-            font-size: 14px;
-            font-weight: bold;
-            margin-bottom: 8px;
-        }
+button {
+    background-color: #5b211d;
+    color: white;
+    padding: 14px 30px;
+    border: none;
+    margin-top: 20px;
+    cursor: pointer;
+    letter-spacing: 2px;
+}
 
-        input,
-        select,
-        textarea {
-            width: 100%;
-            padding: 14px;
-            font-family: Arial, sans-serif;
-            font-size: 14px;
-            color: #171414;
-            background-color: #fffdf9;
-            border: 1px solid #d8c8bb;
-            border-radius: 3px;
-            outline: none;
-        }
+button:hover {
+    background-color: #98715e;
+}
 
-        input:focus,
-        select:focus,
-        textarea:focus {
-            border-color: #8b2635;
-        }
+#response {
+    color: #702b27;
+    margin-top: 20px;
+    text-align: center;
+}
 
-        textarea {
-            resize: vertical;
-        }
+/* Responsive */
 
-        input::placeholder,
-        textarea::placeholder {
-            color: #a4978e;
-        }
+@media screen and (max-width: 768px) {
 
-        .divider {
-            height: 1px;
-            background-color: #e4d7cc;
-            margin: 15px 0 30px;
-        }
+    .form-container {
+        width: 85%;
+        padding: 20px;
+    }
 
-        .helper {
-            color: #8d7b70;
-            font-size: 14px;
-            margin-bottom: 25px;
-        }
+    nav a {
+        display: inline-block;
+        margin: 10px;
+    }
 
-        /* SUBMIT BUTTON */
+}
 
-        button {
-            width: 100%;
-            padding: 16px;
-            background-color: #8b2635;
-            color: #fffaf5;
-            border: 1px solid #8b2635;
-            font-family: Georgia, serif;
-            font-size: 15px;
-            letter-spacing: 1px;
-            cursor: pointer;
-        }
+/* Footer */
 
-        button:hover {
-            background-color: #291b17;
-            border-color: #291b17;
-        }
+footer {
+    background-color: #4a1717;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
 
-        #formStatus {
-            margin-top: 15px;
-            color: #4b2e25;
-            font-size: 14px;
-        }
-
-        /* COMMENTS SECTION */
-
-        .comments-section {
-            text-align: center;
-            margin-top: 60px;
-            padding: 35px 20px;
-        }
-
-        .comments-section h2 {
-            font-size: 32px;
-        }
-
-        .comments-section p {
-            color: #8d7b70;
-            margin-bottom: 12px;
-        }
-
-        .note {
-            font-size: 12px;
-            font-style: italic;
-        }
-
-        /* FOOTER */
-
-        footer {
-            background-color: #171414;
-            color: #c9b9ae;
-            text-align: center;
-            padding: 25px;
-            font-size: 12px;
-            letter-spacing: 1px;
-        }
-    </style>
+</style>
+<link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
-    <!-- HEADER -->
-    <header>
-        <p class="logo">MATURE <span>ELEGANCE</span></p>
-        <p class="tagline">
-            Your thoughts. Your voice. Your elegance.
-        </p>
-         <!-- navigation -->
-        <nav>
-            <ul>
-                <li><a href="index.html">home</a></li>
-                <li><a href="about.html">about us</a></li>
-                <li><a href="services.html">Services</a></li>
-                <li><a href="enquiries.html">Enquiriese</a></li>
-                <li><a href="contact.html">contact</a></li>
-            </ul>
-        </nav> 
-    </header>
+<!-- Navigation -->
 
-    <!-- MAIN CONTENT -->
-    <main class="container">
+    <nav>
+        <a href="index.html">HOME</a>
+        <a href="about.html">ABOUT</a>
+        <a href="services.html">SERVICES</a>
+        <a href="enquiries.html">ENQUIRIES</a>
+        <a href="contact.html">CONTACT</a>
+    </nav>
 
-        <section class="intro">
-            <p class="eyebrow">WE WOULD LOVE TO HEAR FROM YOU</p>
+<!-- Heading -->
 
-            <h1>Make an <span>Enquiry.</span></h1>
+<header>
+    <h1>PRODUCT ENQUIRIES</h1>
+    <p>WE ARE HERE TO HELP YOU</p>
+</header>
 
-            <p>
-                Have a question, suggestion, or something to share?
-                Complete the form below and leave us a message.
-            </p>
-        </section>
+<!-- Enquiry Form -->
 
-        <!-- ENQUIRY FORM -->
-        <form id="enquiryForm">
+<div class="form-container">
 
-            <h2>Personal Details</h2>
+<h2>Make An Enquiry</h2>
 
-            <div class="form-row">
+<p>Please complete the form below to enquire about our products and services.</p>
 
-                <div class="field">
-                    <label for="name">Full Name</label>
-                    <input type="text" id="name" name="name"
-                           placeholder="Enter your full name" required>
-                </div>
+<form action="process-enquiry.php" method="POST"
+onsubmit="return processEnquiry(event)">
 
-                <div class="field">
-                    <label for="email">Email Address</label>
-                    <input type="email" id="email" name="email"
-                           placeholder="you@example.com" required>
-                </div>
+    <label>Full Name:</label>
 
-            </div>
+    <input type="text" name="fullname"
+    placeholder="Enter your full name"
+    required minlength="3">
 
-            <div class="field">
-                <label for="phone">Phone Number (Optional)</label>
-                <input type="tel" id="phone" name="phone"
-                       placeholder="Enter your phone number">
-            </div>
+    <label>Email Address:</label>
 
-            <div class="field">
-                <label for="subject">Enquiry Subject</label>
+    <input type="email" name="email"
+    placeholder="Enter your email"
+    required>
 
-                <select id="subject" name="subject" required>
-                    <option value="">Select a subject</option>
-                    <option value="general">General Enquiry</option>
-                    <option value="services">Services</option>
-                    <option value="collaboration">Collaboration</option>
-                    <option value="feedback">Feedback</option>
-                    <option value="other">Other</option>
-                </select>
-            </div>
+    <label>Phone Number:</label>
 
-            <div class="field">
-                <label for="message">Your Message</label>
+    <input type="tel" name="phone"
+    placeholder="Enter your phone number"
+    pattern="[0-9+\-\s]{10,15}"
+    required>
 
-                <textarea id="message" name="message" rows="6"
-                          placeholder="Write your enquiry here..."
-                          required></textarea>
-            </div>
+    <label>Type Of Enquiry:</label>
 
-            <div class="divider"></div>
 
-            <!-- COMMENTS -->
-            <h2>Comments &amp; Feedback</h2>
+ <select name="enquiry" id="enquiry" required>
 
-            <p class="helper">
-                Your opinions matter. Share your thoughts, ideas,
-                or suggestions with us.
-            </p>
+    <option value="">Select an enquiry</option>
+    <option value="product">Product Information</option>
+    <option value="price">Product Prices</option>
+    <option value="availability">Product Availability</option>
+    <option value="sponsorship">Sponsorship Opportunity</option>
+    <option value="partnership">Business Partnership</option>
+    <option value="volunteer">Volunteer Opportunity</option>
 
-            <div class="field">
-                <label for="comments">Leave a Comment</label>
+</select>
 
-                <textarea id="comments" name="comments" rows="4"
-                          placeholder="Tell us what you think..."></textarea>
-            </div>
 
-            <button type="submit">Submit Enquiry &rarr;</button>
+    <label>Product Name:</label>
 
-            <p id="formStatus" role="status" aria-live="polite"></p>
+    <input type="text" name="product"
+    placeholder="Enter product name">
 
-        </form>
+    <label>Your Message:</label>
 
-        <!-- COMMENTS INFORMATION -->
-        <section class="comments-section">
+    <textarea name="message"
+    placeholder="Write your enquiry here..."
+    required minlength="10"></textarea>
 
-            <p class="eyebrow">YOUR VOICE MATTERS</p>
+    <button type="submit">SUBMIT ENQUIRY</button>
 
-            <h2>Comments &amp; <span>Thoughts.</span></h2>
+</form>
 
-            <p>
-                We appreciate every question, suggestion,
-                and thoughtful comment shared with us.
-            </p>
+<p id="response" role="status"></p>
 
-            <p class="note">
-                Your feedback is valuable to us.
-            </p>
+</div>
 
-        </section>
+<!-- Footer -->
 
-    </main>
+<footer>
+    <p>© 2026 Elegant Intimates | All Rights Reserved</p>
+</footer>
 
-    <!-- FOOTER -->
-    <footer>
-        <p>&copy; 2026 Mature Elegance. All rights reserved.</p>
-    </footer>
+   <script>
 
-    <!-- BASIC FORM INTERACTION -->
-    <script>
-        const form = document.getElementById("enquiryForm");
-        const status = document.getElementById("formStatus");
+function processEnquiry(event) {
 
-        form.addEventListener("submit", function(event) {
-            event.preventDefault();
+    event.preventDefault();
 
-            status.textContent =
-                "Thank you for your enquiry! A backend is needed to send and save your message.";
+    let form = event.target;
 
-            status.style.backgroundColor = "#eee2d5";
-            status.style.padding = "15px";
-        });
-    </script>
+    let fullname = form.elements["fullname"].value.trim();
+    let email = form.elements["email"].value.trim();
+    let phone = form.elements["phone"].value.trim();
+    let enquiry = form.elements["enquiry"].value;
+    let message = form.elements["message"].value.trim();
 
+    let response = document.getElementById("response");
+
+    response.style.color = "#b00020";
+
+    // Validate full name
+    if (fullname.length < 3) {
+        response.innerHTML = "Please enter your full name (at least 3 characters).";
+        return false;
+    }
+
+    // Validate email
+    if (!form.elements["email"].checkValidity()) {
+        response.innerHTML = "Please enter a valid email address.";
+        return false;
+    }
+
+    // Validate phone number
+    if (!form.elements["phone"].checkValidity()) {
+        response.innerHTML = "Please enter a valid phone number.";
+        return false;
+    }
+
+    // Validate enquiry type
+    if (enquiry === "") {
+        response.innerHTML = "Please select a type of enquiry.";
+        return false;
+    }
+
+    // Validate message
+    if (message.length < 10) {
+        response.innerHTML = "Your message must contain at least 10 characters.";
+        return false;
+    }
+
+    response.style.color = "#702b27";
+
+    // Display confirmation
+    response.innerHTML = "Thank you! Your enquiry has been checked successfully.";
+
+    return false;
+}
+
+</script>     
 </body>
 </html>

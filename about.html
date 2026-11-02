@@ -1,49 +1,408 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css_assets/style.css">
-    <title>amosguidtogoodunderweart</title>
+    <title>About Us | Elegant Intimates</title>
+
+<meta name="description" content="Learn about Elegant Intimates, a brand inspired by comfort, quality, simplicity and timeless elegance. Discover our story and values.">
+
+<meta name="keywords" content="About Elegant Intimates, our story, comfort, quality, timeless elegance">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+    <style>
+
+        body {
+            margin: 0;
+            padding: 0;
+            background-color: #f5eee7;
+            font-family: Georgia, serif;
+            color: #3b211b;
+        }
+
+        /* Navigation Bar */
+
+        nav {
+            background-color: #4a1717;
+            padding: 25px;
+            text-align: center;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 25px;
+            font-size: 16px;
+            letter-spacing: 2px;
+        }
+
+        nav a:hover {
+            color: #d9b9a5;
+        }
+
+        /* Page Heading */
+
+        header {
+            background-color: #6b2925;
+            color: white;
+            padding: 45px;
+            text-align: center;
+        }
+
+        header h1 {
+            font-size: 40px;
+            letter-spacing: 4px;
+            font-weight: normal;
+        }
+
+        header p {
+            letter-spacing: 2px;
+        }
+
+        /* About Section */
+
+        .about-container {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 50px;
+            padding: 60px;
+        }
+
+        /* Picture */
+
+        .about-image {
+            width: 45%;
+        }
+
+        .about-image img {
+            width: 100%;
+            height: 450px;
+            object-fit: cover;
+            border: 8px solid white;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+        }
+
+        /* About Text */
+
+        .about-text {
+            width: 45%;
+        }
+
+        .about-text h2 {
+            color: #702b27;
+            font-size: 32px;
+            font-weight: normal;
+        }
+
+        .about-text p {
+            font-size: 17px;
+            line-height: 1.9;
+            color: #5b4035;
+        }
+
+        /* Our Values */
+
+        .values {
+            background-color: white;
+            text-align: center;
+            padding: 40px;
+            margin: 20px 60px;
+        }
+
+        .values h2 {
+            color: #702b27;
+            font-weight: normal;
+            font-size: 30px;
+        }
+
+        .values p {
+            line-height: 1.8;
+            font-size: 17px;
+        }
+
+        /* Responsive Design */
+
+        @media screen and (max-width: 768px) {
+
+            .about-container {
+                flex-direction: column;
+                padding: 25px;
+            }
+
+            .about-image,
+            .about-text {
+                width: 100%;
+            }
+
+            .about-image img {
+                height: 300px;
+            }
+
+            .values {
+                margin: 20px;
+            }
+
+            nav a {
+                display: inline-block;
+                margin: 10px;
+            }
+
+        }
+
+        /* Footer */
+
+        footer {
+            background-color: #4a1717;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            margin-top: 40px;
+        }
+/* ABOUT PAGE ANIMATIONS */
+
+/* Image animation */
+
+.about-image img {
+    animation: imageFade 1.5s ease-in;
+    cursor: pointer;
+    transition: transform 0.4s ease;
+}
+
+.about-image img:hover {
+    transform: scale(1.03);
+}
+
+/* Fade animation */
+
+@keyframes imageFade {
+
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+
+}
+
+/* Read More Button */
+
+.read-button {
+    background-color: #5b211d;
+    color: white;
+    padding: 13px 25px;
+    border: none;
+    cursor: pointer;
+    font-family: Georgia, serif;
+    letter-spacing: 2px;
+    margin-top: 15px;
+    transition: background-color 0.4s ease;
+}
+
+.read-button:hover {
+    background-color: #98715e;
+}
+
+/* Lightbox */
+
+.lightbox {
+    display: none;
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(35, 15, 12, 0.9);
+    justify-content: center;
+    align-items: center;
+}
+
+.lightbox img {
+    max-width: 85%;
+    max-height: 80%;
+    border: 5px solid white;
+}
+
+.close {
+    position: absolute;
+    top: 25px;
+    right: 40px;
+    color: white;
+    font-size: 40px;
+    cursor: pointer;
+}
+
+    </style>
+   <link rel="stylesheet" href="style.css"> 
 </head>
+
 <body>
+
+    <!-- Navigation -->
+    <nav>
+        <a href="index.html">HOME</a>
+        <a href="about.html">ABOUT</a>
+        <a href="services.html">SERVICES</a>
+        <a href="enquiries.html">ENQUIRIES</a>
+        <a href="contact.html">CONTACT</a>
+    </nav>
+
+
+
+    <!-- Heading -->
+
     <header>
-        <!-- /* about page */ -->
-                <img src="_images/sv3underwear (1).jpg" alt="amosguidtogoodunderwear hero shot">
-        <nav>
-            <ul>
-                <li><a href="index.html">home</a></li>
-                <li><a href="about.html">about us</a></li>
-                <li><a href="services.html">Services</a></li>
-                <li><a href="enquiries.html">Enquiriese</a></li>
-                <li><a href="contact.html">contact</a></li>
-            </ul>
-        </nav>
+
+        <h1>ABOUT US</h1>
+
+        <p>OUR STORY • OUR VALUES • OUR ELEGANCE</p>
+
     </header>
-    <main>
-   <h1 >
-    small and beautiful forms
-   </h1>
-   <img src="_images/bodypic6.jpg" > 
-   <h1 >
-    About us
-   </h1>
 
-   <p  >
-    amosguidtogoodunderwear for All is a charity founded in 2024 by Maria Macnamara after her volunteer work in orphanages in Ethiopia, where she witnessed the struggles of children living without basic necessities.
-     One experience  affected her was meeting a sick child named Elsa, which made her realize the need for sustainable support rather than short-term volunteering. 
-     She identified underwear as a critical but often overlooked need, since many women and children in poor African communities had only one pair of worn-out underwear or none at all, leading to health, hygiene, and dignity issues.
 
-  The charity began by collecting and distributing new pants and new or gently worn bras to adults and children in Africa.
- It also sponsored education in Kenya and Malawi for a time, but later shifted its focus entirely to underwear provision to maximize long-term impact. 
- In 2019, amosguidtogoodunderwear expanded its mission to include people in the UK who also lack access to underwear.
+    <!-- About Section -->
 
- amosguidtogoodunderwear for All  is guided by a dedicated trustee board and supported by volunteers who help collect, sort, and distribute donations.
- Today, the charity continues to provide underwear to thousands of people in Africa and the UK, addressing both practical health needs and restoring dignity to those who would otherwise go without.
-   </p>
+    <section class="about-container">
 
-   <img src="_images/bodypic3.jpg" style="background-color: rgb(113, 8, 20);">
-    </main>
-    
+<div class="about-image">
+
+    <img src="_images/servicepic7.webp"
+    alt="NEW product lunch of jojox mayla shoes"
+    onclick="openLightbox()">
+
+</div>
+
+
+        <div class="about-text">
+
+            <h2>Welcome to Elegant Intimates</h2>
+
+            <p>
+                Elegant Intimates is a brand inspired by comfort,
+                simplicity and timeless elegance. Our aim is to
+                provide a collection of undergarments that combines
+                quality, comfort and beautiful design.
+            </p>
+
+            <p>
+                We believe that undergarments are an important
+                part of everyday clothing. That is why we value
+                products that offer comfort while maintaining
+                a sense of sophistication and style.
+            </p>
+
+            <p>
+                Our brand focuses on creating a welcoming shopping
+                experience where customers can explore different
+                styles and find pieces that suit their preferences.
+            </p>
+    <div id="extraInfo" style="display:none;">
+
+    <p>
+    Elegant Intimates aims to make every shopping
+    experience special by offering products that
+    combine sophistication, comfort and quality.
+    We value our customers and strive to provide
+    a welcoming environment for everyone.
+    </p>
+
+</div>
+
+<button class="read-button" onclick="readMore()">
+    READ MORE
+</button>
+
+        </div>
+
+    </section>
+
+
+    <!-- Our Values -->
+
+    <section class="values">
+
+        <h2>Our Philosophy</h2>
+
+        <p>
+            At Elegant Intimates, we believe in comfort,
+            quality and timeless design. Our goal is to
+            make everyday essentials feel special through
+            simplicity, elegance and attention to detail.
+        </p>
+
+    </section>
+
+<!-- Image Lightbox -->
+
+<div id="myLightbox" class="lightbox">
+
+    <span class="close" onclick="closeLightbox()">
+        &times;
+    </span>
+
+    <img src="_images/servicepic7.webp" alt="NEW product lunch of jojox mayla shoes">
+
+</div>
+
+<!-- Footer -->
+
+    <footer>
+
+        <p>© 2026 Elegant Intimates | All Rights Reserved</p>
+
+    </footer>
+       <script>
+
+// READ MORE AND READ LESS
+
+function readMore() {
+
+    let information = document.getElementById("extraInfo");
+
+    let button = document.querySelector(".read-button");
+
+    if (information.style.display === "none") {
+
+        information.style.display = "block";
+
+        button.innerHTML = "READ LESS";
+
+    }
+
+    else {
+
+        information.style.display = "none";
+
+        button.innerHTML = "READ MORE";
+
+    }
+
+}
+
+
+// OPEN IMAGE LIGHTBOX
+
+function openLightbox() {
+
+    document.getElementById("myLightbox").style.display = "flex";
+
+}
+
+
+// CLOSE IMAGE LIGHTBOX
+
+function closeLightbox() {
+
+    document.getElementById("myLightbox").style.display = "none";
+
+}
+
+</script>
+
 </body>
 </html>
